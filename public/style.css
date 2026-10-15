@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; display: grid; place-items: center;
+  font-family: system-ui, -apple-system, sans-serif; color: #6b4a4a;
+  background: linear-gradient(160deg, #ffe8d6, #fbc7d4);
+}
+main { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+.mic {
+  width: 160px; height: 160px; border: 0; border-radius: 50%; font-size: 4rem; cursor: pointer;
+  background: #e0566f; color: #fff; box-shadow: 0 20px 50px rgba(120, 50, 60, .3); transition: transform .1s;
+}
+.mic:hover { transform: scale(1.04); }
+.mic.on { background: #2f9e6b; animation: pulse 1.4s infinite; }
+.mic.talking { background: #e0566f; animation: pulse 0.8s infinite; }
+@keyframes pulse { 50% { box-shadow: 0 0 0 24px rgba(224, 86, 111, .2); } }
+.status { min-height: 1.4rem; font-size: 1.1rem; }
