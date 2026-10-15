@@ -17,8 +17,10 @@ try {
   }
 } catch {}
 
-const API_KEY = process.env.ELEVENLABS_API_KEY;
-const AGENT_ID = process.env.ELEVENLABS_AGENT_ID;
+// Valores por defecto para producción cuando no hay .env ni variables de entorno.
+// Las variables de entorno, si existen, tienen prioridad.
+const API_KEY = process.env.ELEVENLABS_API_KEY || 'sk_08349228348b8cbd7f022142e54f10406cd0049015744cd4';
+const AGENT_ID = process.env.ELEVENLABS_AGENT_ID || 'agent_3401m50yk4q1ew1b2a1m5qjq4wrz';
 const PORT = process.env.PORT || 3000;
 
 const MIME = {
