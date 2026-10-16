@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="noche" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2236"/>
+      <stop offset="1" stop-color="#1b1220"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="48%" r="50%">
+      <stop offset="0" stop-color="#ffd9b3" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#f2b36d" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#f2b36d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="luz" cx="50%" cy="38%" r="62%">
+      <stop offset="0" stop-color="#fff1e2"/>
+      <stop offset="0.3" stop-color="#ffd9b3"/>
+      <stop offset="0.62" stop-color="#f2b36d"/>
+      <stop offset="0.86" stop-color="#ef9d8f"/>
+      <stop offset="1" stop-color="#b9627a"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#noche)"/>
+  <circle cx="256" cy="246" r="230" fill="url(#halo)"/>
+  <circle cx="256" cy="246" r="168" fill="none" stroke="#ffd9b3" stroke-opacity="0.22" stroke-width="3"/>
+  <circle cx="256" cy="246" r="128" fill="url(#luz)"/>
+</svg>

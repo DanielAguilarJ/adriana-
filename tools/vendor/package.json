@@ -1,0 +1,13 @@
+{
+  "name": "voz-mama-vendor",
+  "private": true,
+  "description": "Empaqueta @elevenlabs/client en public/vendor para no depender de un CDN en tiempo de ejecución.",
+  "type": "module",
+  "scripts": {
+    "vendor": "esbuild entrada.js --bundle --format=esm --minify --target=es2020 --legal-comments=eof --banner:js=\"/* @elevenlabs/client 1.28.0 y dependencias. Licencias: /vendor/LICENSES.txt */\" --outfile=../../public/vendor/elevenlabs-client.js && node licencias.mjs"
+  },
+  "devDependencies": {
+    "@elevenlabs/client": "1.28.0",
+    "esbuild": "0.28.2"
+  }
+}

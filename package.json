@@ -1,7 +1,12 @@
 {
   "name": "voz-mama",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "scripts": { "start": "node server.js" }
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "agente": "node agent/sync.mjs",
+    "probar-agente": "node scripts/probar-agente.mjs"
+  }
 }
